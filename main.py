@@ -90,6 +90,7 @@ def main():
         else:
             print("Failed to fetch image.")
         wifi_sleep()   # 关闭 Wi-Fi 降低功耗
+        epd.sleep()  # 进入休眠模式
         sleep_until_target()  # 进入深度睡眠，等待下次唤醒
 
 if __name__ == "__main__":
